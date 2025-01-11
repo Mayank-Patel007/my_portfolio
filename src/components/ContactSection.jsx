@@ -133,11 +133,11 @@ const ContactSection = () => {
               <div className="space-y-4">
                 <div className="flex items-center">
                   <FaEnvelope className="mr-4 text-2xl text-teal-300" />
-                  <span>your.email@example.com</span>
+                  <span>mayankpatel4149@gmail.com</span>
                 </div>
                 <div className="flex items-center">
                   <FaPhone className="mr-4 text-2xl text-teal-300" />
-                  <span>+91 1234567890</span>
+                  <span>+91 7600295356</span>
                 </div>
               </div>
             </div>

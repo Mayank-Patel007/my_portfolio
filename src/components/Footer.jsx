@@ -1,6 +1,7 @@
 import React from 'react';
 import { Home, User, Briefcase, Mail } from 'lucide-react';
 import { FaGithub, FaLinkedin, FaTwitter } from 'react-icons/fa';
+import resume from '../assets/mayank-patel-resume.pdf';
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
@@ -18,7 +19,7 @@ const Footer = () => {
             <Briefcase className="mr-2" size={20} />
             Projects
           </a>
-          <a href="#resume" className="flex items-center text-teal-300 hover:text-teal-200 transition-colors">
+          <a href={resume} className="flex items-center text-teal-300 hover:text-teal-200 transition-colors">
             <User className="mr-2" size={20} />
             Resume
           </a>

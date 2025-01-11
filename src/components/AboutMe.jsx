@@ -68,27 +68,27 @@ const AboutMe = () => {
       case 'expertise':
         return (
           <div ref={expertiseRef} className="grid grid-cols-2 md:grid-cols-3 gap-4">
-            <div className="bg-teal-500/50 p-4 rounded-lg flex items-center space-x-3">
+            <div className="bg-teal-500/50 hover:justify-center hover:bg-teal-500/90 p-4 rounded-lg flex items-center space-x-3">
               <FaReact className="text-teal-700" />
-              <span className="text-white">React.js</span>
+              <span className="text-white ">React.js</span>
             </div>
-            <div className="bg-blue-500/50 p-4 rounded-lg flex items-center space-x-3">
+            <div className="bg-blue-500/50 hover:justify-center hover:bg-blue-500/90 p-4 rounded-lg flex items-center space-x-3">
               <RiTailwindCssFill className="text-blue-700" />
               <span className="text-white">Tailwind CSS</span>
             </div>
-            <div className="bg-yellow-500/50 p-4 rounded-lg flex items-center space-x-3">
+            <div className="bg-yellow-500/50 hover:justify-center hover:bg-yellow-500/90 p-4 rounded-lg flex items-center space-x-3">
               <IoLogoJavascript className="text-yellow-700" />
               <span className="text-white">JavaScript</span>
             </div>
-            <div className="bg-gray-500/50 p-4 rounded-lg flex items-center space-x-3">
+            <div className="bg-gray-500/50 hover:justify-center hover:bg-gray-500/90 p-4 rounded-lg flex items-center space-x-3">
               <FaGithub className="text-gray-700" />
               <span className="text-white">GitHub</span>
             </div>
-            <div className="bg-sky-500/50 p-4 rounded-lg flex items-center space-x-3">
+            <div className="bg-sky-500/50 hover:justify-center hover:bg-sky-500/90 p-4 rounded-lg flex items-center space-x-3">
               <FaHtml5 className="text-sky-700" />
               <span className="text-white">HTML</span>
             </div>
-            <div className="bg-green-500/50 p-4 rounded-lg flex items-center space-x-3">
+            <div className="bg-green-500/50 hover:justify-center hover:bg-green-500/90 p-4 rounded-lg flex items-center space-x-3">
               <MdAnimation className="text-green-700" />
               <span className="text-white">GSAP Animation</span>
             </div>
@@ -97,15 +97,15 @@ const AboutMe = () => {
       case 'skills':
         return (
           <div className="space-y-4 text-white">
-            <div className="flex items-center space-x-3 bg-teal-500/50 rounded-md p-2">
+            <div className="flex items-center space-x-3 bg-teal-500/50 rounded-md p-2 hover:scale-105 duration-200">
               <Users className="text-teal-700" />
               <span>Exceptional Team Collaboration</span>
             </div>
-            <div className="flex items-center space-x-3 bg-blue-500/50 rounded-md p-2">
+            <div className="flex items-center space-x-3 bg-blue-500/50 rounded-md p-2 hover:scale-105 duration-200">
               <Brain className="text-blue-700" />
               <span>Advanced Problem-Solving</span>
             </div>
-            <div className="flex items-center space-x-3 bg-yellow-500/50 rounded-md p-2">
+            <div className="flex items-center space-x-3 bg-yellow-500/50 rounded-md p-2 hover:scale-105 duration-200">
               <Award className="text-yellow-700" />
               <span>Continuous Learning Mindset</span>
             </div>
@@ -117,9 +117,9 @@ const AboutMe = () => {
               {professionalTimeline.map((item, index) => (
                 <div
                   key={index}
-                  className="border-l-4 border-teal-500 bg-teal-500/10 rounded-md p-2 pl-4 py-2 relative text-gray-300"
+                  className="border-l-4 border-teal-500 bg-teal-500/10 rounded-md p-2 pl-4 py-2 relative group text-gray-300"
                 >
-                  <div className="absolute -left-3 top-2 w-6 h-6 bg-teal-500 rounded-full"></div>
+                  <div className="absolute -left-3 top-3 w-6 h-6 bg-teal-500 rounded-full group-hover:top-1 duration-200 "></div>
                   <h3 className="text-lg font-semibold text-teal-500">
                     {item.year} - {item.title}
                   </h3>
