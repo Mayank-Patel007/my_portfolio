@@ -1,26 +1,26 @@
 import React, { useState } from 'react';
-import { 
-  FaLinkedin, 
-  FaGithub, 
-  FaTwitter, 
-  FaEnvelope, 
-  FaPhone, 
-  FaCodepen, 
-  FaPaperPlane 
+import {
+  FaLinkedin,
+  FaGithub,
+  FaTwitter,
+  FaEnvelope,
+  FaPhone,
+  FaCodepen,
+  FaPaperPlane,
 } from 'react-icons/fa';
 
 const ContactSection = () => {
   const [formData, setFormData] = useState({
     name: '',
     email: '',
-    message: ''
+    message: '',
   });
 
   const handleChange = (e) => {
     const { name, value } = e.target;
-    setFormData(prevState => ({
+    setFormData((prevState) => ({
       ...prevState,
-      [name]: value
+      [name]: value,
     }));
   };
 
@@ -32,35 +32,43 @@ const ContactSection = () => {
     setFormData({
       name: '',
       email: '',
-      message: ''
+      message: '',
     });
+  };
+
+  const handleScrollToContact = () => {
+    const contactSection = document.getElementById('contact-section');
+    contactSection?.scrollIntoView({ behavior: 'smooth' });
   };
 
   const socialLinks = [
     {
       icon: FaLinkedin,
       url: 'https://linkedin.com/in/yourusername',
-      color: 'text-blue-600'
+      color: 'text-blue-600',
     },
     {
       icon: FaGithub,
       url: 'https://github.com/yourusername',
-      color: 'text-gray-800'
+      color: 'text-gray-800',
     },
     {
       icon: FaTwitter,
       url: 'https://twitter.com/yourusername',
-      color: 'text-blue-400'
+      color: 'text-blue-400',
     },
     {
       icon: FaCodepen,
       url: 'https://codepen.io/yourusername',
-      color: 'text-gray-700'
-    }
+      color: 'text-gray-700',
+    },
   ];
 
   return (
-    <section className="py-16 bg-gradient-to-r from-blue-500 via-teal-500 to-gray-500">
+    <section
+      id="contact"
+      className="py-16 bg-gradient-to-r from-blue-500 via-teal-500 to-gray-500"
+    >
       <div className="container mx-auto px-4">
         <h2 className="text-4xl font-bold text-center mb-12 text-white">
           Contact me

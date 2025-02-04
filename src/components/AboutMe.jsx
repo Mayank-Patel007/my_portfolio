@@ -138,7 +138,7 @@ const AboutMe = () => {
   return (
     <div
       id="about-section"
-      className="min-h-screen bg-gradient-to-r from-blue-500 via-teal-500 to-gray-500 py-16 px-4 md:px-10 lg:px-36"
+      className="pt-24 bg-gradient-to-r from-blue-500 via-teal-500 to-gray-500 py-16 px-4 md:px-10 lg:px-36"
     >
       <div className="container mx-auto">
         <div className="text-center mb-12">

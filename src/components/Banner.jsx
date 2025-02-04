@@ -12,14 +12,14 @@ const Banner = () => {
   };
 
   return (
-    <div className="relative mt-16 md:mt-0 min-h-screen min-w-full flex flex-col-reverse md:flex-row items-center justify-between bg-gradient-to-r from-blue-500 via-teal-500 to-gray-500 text-white overflow-hidden lg:px-10 xl:px-36">
+    <section id='home' className="relative mt-16 md:mt-0 min-h-screen min-w-full flex flex-col-reverse md:flex-row items-center justify-between bg-gradient-to-r from-blue-500 via-teal-500 to-gray-500 text-white overflow-hidden lg:px-10 xl:px-36">
       {/* Left Content Section */}
       <div className="flex-1 p-8 flex flex-col justify-center items-start space-y-6 text-center md:text-left">
         <h1 className="text-4xl md:text-6xl lg:pr-8 xl:pr-48 font-extrabold tracking-tighter">
           Hi, I'm <span className="text-teal-300">Mayank Patel</span>
         </h1>
         <h2 className="text-lg md:text-2xl font-medium">
-          Crafting exceptional web experiences with React and passion!
+          Crafting exceptional web experiences with React and Tailwind CSS
         </h2>
         <p className="text-sm md:text-lg text-gray-100/80 max-w-lg leading-relaxed mx-auto md:mx-0">
           I specialize in creating dynamic, responsive, and engaging web
@@ -90,7 +90,7 @@ const Banner = () => {
           ></div>
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 
